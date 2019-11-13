@@ -21,6 +21,6 @@ docker run -it --rm \
     -e uid=1000 \
     -e gid=1000 \
     --name vlc \
-    vlc-bionic \
+    chevylin0802/vlc-bionic \
     /usr/bin/vlc
 
