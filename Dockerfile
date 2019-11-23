@@ -4,6 +4,7 @@ MAINTAINER Chevy Lin
 RUN apt-get update -y
 RUN apt-get upgrade -y
 
+RUN apt-get install pulseaudio pulseaudio-utils pulseaudio-equalizer pulseaudio-dlna -y
 RUN apt-get install vlc -y
 
 ENV VIDEOLAN_UID=1000

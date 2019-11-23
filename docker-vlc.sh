@@ -16,6 +16,8 @@ docker run -it --rm \
     -v /dev/snd:/dev/snd --privileged \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v /run/user/1000:/run/user/1000 \
+    -v $HOME/.config/pulse/native:$HOME/.config/pulse/native:ro \
+    -e PULSE_SERVER=unix:$XDG_RUNTIME_DIR/pulse/native:\
     -e XAUTHORITY=$XAUTHORITY \
     -e DISPLAY=unix$DISPLAY \
     -e uid=1000 \
